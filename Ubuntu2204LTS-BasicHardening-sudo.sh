@@ -25,7 +25,7 @@ service ssh restart
 # Install UFW, Enable firewall (ufw) & allow OpenSSH
 sudo apt install -y ufw
 sudo ufw allow OpenSSH
-sudo ufw enable
+sudo yes | sudo ufw enable
 
 # Install and configure fail2ban to prevent brute-force attacks
 sudo apt install -y fail2ban
