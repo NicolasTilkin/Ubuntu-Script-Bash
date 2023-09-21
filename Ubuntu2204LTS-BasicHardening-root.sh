@@ -9,6 +9,9 @@
 apt update
 apt upgrade -y
 
+# Create or update root password
+passwd
+
 # Add new user <<<Requires Customization>>>
 adduser user1
 

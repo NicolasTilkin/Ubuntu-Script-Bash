@@ -9,6 +9,9 @@
 sudo apt update
 sudo apt upgrade -y
 
+# Create or update root password
+passwd
+
 # Disable root login and enforce key-based authentication
 sudo sed -i 's/PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
 sudo sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
